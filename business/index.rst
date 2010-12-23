@@ -69,8 +69,15 @@ The general future product focus is to be the best platform for building geospat
 It should also be a platform that enables partners and clients to build their own products.  This includes not just the software, but being able to offer unlimited support on products built on the OpenGeo Suite.  This will be accomplished with business relationships that bundle the Enterprise Edition support and extras with products built on top of it.  
 
 
-Our OpenCore approach
+Our Open-Core approach
 ----------------------
+There is much written about the Open-Core model [#f1]_.  There has been backlash against it, as some companies using the term lack a real commitment to open source.  Since OpenGeo's reason for existence is to further the open source software we naturally put making software ahead of huge revenue to make investors happy.  But we draw inspiration from good Open-Core companies.  The essence is 'give me a cookie' [#f2]_ - include _something_ in the Enterprise package that you can't get in the normal package that you can sell a CTO/CIO on.  
+
+At OpenGeo we discussed internally at length if we felt ok about having code that we didn't release as open source.  Everyone agreed that it's worth it if a very small piece of proprietary code can help make a business model that funds us to spend the vast majority of our time on open source code.  But we want to do that as little as possible, and that we prefer not having to do anything proprietary.  
+
+The first year of the OpenGeo Suite had a Community Edition and Enterprise Edition with the exact same code base.  The Enterprise Edition did get additional testing and QA, but had no extra code.  It included unlimited support, access to more granular upgrade packages, and larger levels bundled in training.  We sold a number of them, but not enough to avoid tweaking the model.  For the 2.4 release we likely will have two 'extras' in the Enterprise Edition.  The first is bundling `GeoCat Bridge <http://www.geocat.net/bridge>`_ software, which is a plugin to ArcGIS Desktop tools to publish to the OpenGeo Suite.  The second is extra monitoring functionality.  The base monitoring API is a community module in GeoServer, but we include additional GUI tools in the admin panel that build on top of it.  Our philosophy on choosing these is that are quite far from the core.  The first is only useful to ArcGIS desktop users (which generally are not the same people standing up the server software and building applications), and the second is mostly useful to systems administrators.  We follow Matt Asay's advice [#f3]_, which is to sell to IT Operations - who will spend money to save time.  
+
+So we are now experimenting with making a few pieces more private.  One thing we may try in the future is keeping things private for an explicit amount of time, and then releasing as open source.  We've considered that for things like WMS 1.3, which everyone wanted but no one would step up and fund (big props to the UK Ordnance Survey for finally doing that).  It's not something we could in good conscious keep out of the open source core, but keeping it private for a time could provide a way to spread the funding for it to paying Enterprise clients.  We also favor extras that aren't code.  One leading idea is a subscription service to OpenStreetMap updates, where we automatically keep a database and custom tiles in sync.  Enterprise clients would get updates, everyone else would just have tools to get it once and do updates on their own.  Other ideas include nicer automatic upgrades and networked monitoring tools.  
 
 future product thoughts
 ------------------------
@@ -175,4 +182,15 @@ Limits
 
 
 
+.. rubric:: Footnotes
 
+.. [#f1] 
+http://alampitt.typepad.com/lampitt_or_leave_it/2008/08/open-core-licen.html
+http://blogs.the451group.com/opensource/2008/09/01/andrew-lampitt-defines-open-core-licensing/
+http://blogs.gartner.com/brian_prentice/2010/03/31/open-core-the-emperors-new-clothes/
+
+.. [#f2]
+http://kirkwylie.blogspot.com/2008/07/open-source-business-strategies.html
+
+.. [#f3]
+http://news.cnet.com/8301-13505_3-10350956-16.html
