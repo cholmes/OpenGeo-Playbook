@@ -79,16 +79,48 @@ The first year of the OpenGeo Suite had a Community Edition and Enterprise Editi
 
 So we are now experimenting with making a few pieces more private.  One thing we may try in the future is keeping things private for an explicit amount of time, and then releasing as open source.  We've considered that for things like WMS 1.3, which everyone wanted but no one would step up and fund (big props to the UK Ordnance Survey for finally doing that).  It's not something we could in good conscious keep out of the open source core, but keeping it private for a time could provide a way to spread the funding for it to paying Enterprise clients.  We also favor extras that aren't code.  One leading idea is a subscription service to OpenStreetMap updates, where we automatically keep a database and custom tiles in sync.  Enterprise clients would get updates, everyone else would just have tools to get it once and do updates on their own.  Other ideas include nicer automatic upgrades and networked monitoring tools.  
 
-future product thoughts
-------------------------
 
+Next Product Steps
+------------------
 
-data gathering/collaboration
-mobile
-cloud
+As we expand our revenue from Enterprise contracts we will be able to have more a more concrete roadmap for each OpenGeo Suite release and our future products.  In the short term, however, the roadmap is a complex interchange of open source contributions, funded client work, dedicated product time, and aligning customer needs with our roadmap.  But we have little doubt that we will make progress on the following major areas in the next year.
 
-always a solid core
+Cloud
+~~~~~
 
+Cloud aligns with our goal to make it as easy as possible to add geospatial capabilities to web applications.  Though we've made great progress in easing the installation of the OpenGeo Suite it still requires hardware and a systems administrator, as well as know how on optimizing and scaling it.  Our goal with the cloud is to completely abstract the whole problem of running the infrastructure.  
+
+The OpenGeo Suite already has cloud options, with our partners at Skygone, and as AMI's on Amazon.  Though these match the offerings of our competitors on the cloud we plan to go much further.  The main piece we want to tackle is auto-scaling, firing up new instances on demand.  This is the true advantage of the cloud, to be able to handle any load.  We see interesting use cases like massive tile generation, firing up 100+ machines to cut the process from weeks to hours.  
+
+Our goal is to be able to offer instance hour pricing for fully supported software, that includes automatic upgrades, security fixes, monitoring and scaling.  It should also be very easy to deploy applications developed elsewhere on to the cloud, with test and development instances before going to production.  We like the cloud a lot as a product direction, since it provides extra value to clients.  The combination of supported open source software and cloud computing will allow us to offer incredible capabilities in one package at a great price.
+
+Easy Custom Applications
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Though the projects we work on provide an extreme amount of flexibility there is still a hole in easily composing them in to applications.  A decent developer has no problem, but our goal is to make it easier for technically inclined users to make custom applications.  The center of this is our GeoExplorer application and the GXP framework.  Past advanced Editing and Styling this year we will start to incorporate geospatial processing.  The standards-based Web Processing Service (WPS) is now a part of GeoServer.  We hope to advance `GeoScript <http://www.geoscript.org>`_ and build up easy ways to compose custom processes and incorporate them in to GXP-based applications.  Also needed is some more 'wizard' type functionality to easily compose applications through the GUI itself.  
+
+We believe that advances in this will open up the power of geospatial to a much wider audience.  People who are technically inclined and understand maps, but who haven't had GIS training.  Instead of a model of training them in desktop tools when they will likely do the same 5 operations again and again we hope to make it easier to just design and build a geospatial powered application that speaks in the language of their domain.  
+
+Data gathering and collaboration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Our mission driven goal is to move beyond just sharing data, to helping enable people to build and maintain geospatial information.  We will build upon the existing editing capabilities, pushing further in the direction of versioning and geosynchronization, to enable robust infrastructures for editing.  We also seek to advance 'official' workflows in conjunction with crowdsourcing initiatives, to help risk averse organizations be able to leverage the power of the crowd yet also maintain their required quality.  We see initiatives like OpenStreetMap as a great step in the right direction, but want to enable that type of collaboration for smaller communities on all types of datasets, not just street maps.  The core software should be flexible for lots of different workflows, licensing schemes, and communities.  It should offer a step forward for all geospatial collaboration, and be compatible with existing tools while also pushing the edge on html5 compliant approaches.  
+
+Mobile
+~~~~~~
+
+Key to data collaboration and custom apps will be mobile capabilities.  We've prototyped several applications, and plan to push things much further as mobile platforms are clearly the future.  We hope to enable not just the viewing of geospatial information but mobile editing, for applications like asset management, surveys, and reporting.  Our initial approach will be to push our existing javascript tools as far as possible, leveraging mobile web-browsers, but also wrapping them in toolkits to make them more compatible with mobile environments.  This allows us to share and reuse much more code.  
+
+Quality
+-------
+
+Key to OpenGeo's success is a relentless focus on quality.  Instead of chasing competitors, attempting to implement more features that we can market and sell, we work towards an ideal version of our software.  A system so flexible, user friendly, and powerful that it is the natural choice for anything geospatial related.  We've still got a long ways to go, but right now we believe we have a foundation that is more solid than anything else out there.  As we grow we will dedicate developers to just continually refining and improving that foundation.  
+
+Our costs are often high due to our focus on quality.  We rarely take any shortcuts when developing - we make sure that code is pushed to the lowest library level and written in the most flexible way.  The only time we will code things in a less than ideal way is to prototype a concept, to make a demo of what is possible, and then we come back and build it right when we have a chance.  We also employ a full time interaction designer, to ensure our user experience isn't just an afterthought.  
+
+This focus on quality is essential to our success, since the premium that top quality affords allows us to put appropriate time in to building great open source software.  The first thing that is most always cut in companies working around open source is contributions to the baseline, so we'd have to do the same if we were working in a cut rate manner.  Our clients know that we will always deliver high quality code faster than anyone else, so they continue to work with us.  They know that their system will be one that is supported by a wide open source community, not some custom thing that only their paid consultants will understand.  
+
+The business model for Enterprise contracts depends on having the highest quality product.  The path that all open source companies have followed to success is to have technology that blows away the competition.  This is relatively easy because open source is a superior development methodology.  But it must be higher quality at every level, to achieve ubiquity.  Once ubiquity is achieved you can count on a small percentage of organizations being risk averse and valuing their time very highly.  It is thus a no brainer for them to pay the experts to support their system.  But the key to getting there is to get the software used everywhere, and the only way to do that is to build the best software possible.  
 
 
 Build a network
