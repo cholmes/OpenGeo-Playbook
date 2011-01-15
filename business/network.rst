@@ -1,24 +1,6 @@
-.. _business:
+.. _network:
 
-Business
-============
-
-This section is a twist on a typical 'business plan', since our goals and structure are different than a typical business.  But we sustain ourselves through selling products and services in a competitive market, so many of the things we think about and plan for are more like a business than anything else.  Since one of our core tenants is openness we decided to write out all that is behind the face of OpenGeo.  Think of it as the 'source code' for our organization, where you can see the ways we think about things, our strategy, what we're planning to do next.  Our hope is that being upfront about all of this will enable us to more easily align incentives with potential collaborators.  And we welcome 'patches' on this plan, as we are constantly updating our thinking to adapt and respond to the changing world, looking to find a niche where we can support ourselves providing valued services while creating software that we give away to all.
-
-.. toctree::
-  :maxdepth: 2
-
-  fundamentals
-  industry
-  product
-  marketing
-  network
-  future
-
-
-
-
-Building a network
+Building a Network
 ------------------
 
 Central to the way OpenGeo operates is to continually build a network of allies and partners who are collaborating in countless different ways.  To build the open geospatial web we need to align incentives of many different players around common standards and software.  To achieve this we need our core software widely used, as it helps establish a truly open standard.  The traditional route to achieve this ubiquity is to continue to grow the core company, aggressively marketing and building sales channels worldwide, and owning all the profits.  Our route is to build a more open ecosystem and share the profits with many different entities, including our clients and users.  We seek to create more opportunity than a proprietary ecosystem.  This isn't something we are starting to create now, instead it already exists in the countless companies already making use of the software we work on to provide their clients with great solutions.
@@ -30,7 +12,7 @@ We view are clients as key parts of this network, as at a granular level our cli
 In this network OpenGeo focuses on the core development of the software as well as the core marketing and brand building to give it all an edge of true reliability than people expect from a complete solution.  OpenGeo currently does a number of other functions, like training, application development, direct sales and consulting.  But in the long term we'd like to have our partners and network handle the majority of that.  In the short term though we must prove that there is a real path forward, developing the product and market.
 
 Partners
----------
+~~~~~~~~
 
 OpenGeo's goal is to have a truly worldwide presence around supported open source geospatial software.  The only way to achieve this is with a strong partner network of high quality solution providers.  Thankfully with the nature of open source software there are a number of companies already providing services and application development.  OpenGeo complements their offerings with the ability to offer unlimited support and a guarantee of reliability for the whole solution.  Since OpenGeo seeks to remain small, forgoing the large profits that can come from completely owning sales channels, there is lots of opportunity for partners to grow, potentially eclipsing the size of OpenGeo by offering their own supported products on top of the core.  OpenGeo just seeks to have some revenue always going to a flexible core, ideally from many different domains.  
 
@@ -51,7 +33,7 @@ Of course not all partners will want to offer their own products, but there are 
 * Productization - The most capable partners will likely start to build the same types of custom solutions for several of their clients.  OpenGeo wants to help encourage these to transform to a more general product that can meet the needs of many more.  They will leverage core OpenGeo software, but extend it with additional value to a particular domain, building something new on top of it.  Making the transition to a more general product can be difficult, but can ultimately be beneficial to all, since it will be more niche than OpenGeo's product, but general enough that each client doesn't have to fund the whole development.  Partners will be able to leverage all the business advances that OpenGeo has made, building their product on top of the OpenGeo brand and offering unlimited support on the whole product including all the underlying software.  
 
 Domain-specific Products
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 One of the challenging things about GIS is that most people don't truly understand its power until it's put in their domain, in terms they can understand.  OpenGeo's goal is to bring the power of GIS to a much wider audience, by building tools that are easily customized in to a language they can understand.  For this to be successful, however, we need to team up with many more people who are experts in their domain who can build solutions and products with the OpenGeo core.  Much of this will come from partners.  And indeed OpenGeo will also likely incubate certain products that our direct clients need, hopefully eventually spinning them out as their own open source companies.  
 
@@ -61,11 +43,11 @@ The great thing about geospatial is that it underpins almost everything we do, s
 
 Potential industries and products include:
 
-Fixed location asset management (signs, parking meters, stop lights, fire hydrants, roads, train tracks, solar panels, etc.), land information management, environmental applications, real time vehicle tracking (buses, delivery fleets, drones), insurance risk mapping, emergency response applications, risk modeling, spatial data infrastructures, agriculture management, urban planning, forestry, aviation, electric grid management, hydrography mapping, weather, redistricting, addressing.  (Would be much better to do a whole section really elucidating a number of products that could make a difference in a domain)
+Fixed location asset management (signs, parking meters, stop lights, fire hydrants, roads, train tracks, solar panels, etc.), land information management, environmental applications, real time vehicle tracking (buses, delivery fleets, drones), insurance risk mapping, emergency response applications, risk modeling, spatial data infrastructures, agriculture management, urban planning, forestry, aviation, electric grid management, hydrography mapping, weather, redistricting, addressing.  (Would be much better to do a whole section really elucidating a number of products that could make a difference in a domain - perhaps start an annex of product ideas)
 
 
 OpenGeo Powered Products
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 As partners in the future start to make products on top of OpenGeo software we plan to extend the Enterprise Edition business models.  This will enable partners to take advantage of the business relationships that OpenGeo is establishing, with a strong network and contract vehicles in a variety of industries.  This will be an even higher level of partnership, something more similar to an OEM type of relationship.  OpenGeo provides the core software and support around it, and the partner puts their own mark on top of it, but can offer their clients a top to bottom supported piece of software.  
 
@@ -73,13 +55,11 @@ In this model since the partner is doing a majority of the work they will get a 
 
 OpenGeo's network will then increase in value to all, since it can be leveraged by partners with products to connect to other partners who may have clients with the same need.  Instead of overlapping territories compete we will seek to set up the incentives to lead to cooperation as much as possible.  Of course some competition is good, but it should be on the user interface and product value proposition level, not on the core technology.  Ideally there are a number of different products addressing different market segments in different ways, but each leverages and improves the same core so that all products built on top of OpenGeo naturally evolve faster than any competition.  
 
-Cloud services
----------------
 
-tech strategy - align with other open efforts, and other efforts in general, find key we can add.  GS tech story, with freemarker, pdf thing, etc.  Bends back on community.  Some of this is tech, but here do the biz angle.  Maybe belongs in partners?  Unofficial partners?
+To add:
 
-Needed Network
----------------------------
+tech strategy - align with other open efforts, and other efforts in general, find key we can add.  GS tech story, with freemarker, pdf thing, etc.  Bends back on community.  Some of this is tech, but here do the biz angle.  
+
 
 Other needed collaborations for open geo web, things OpenGeo likely won't do, but want to encourage
 
@@ -89,58 +69,5 @@ Other needed collaborations for open geo web, things OpenGeo likely won't do, bu
 - gov transparency apps (open source socrata)
 - mozilla, html5, web
 - Foundation to support Open Data
-
-marketing message - solutions, not software.  A complete solution comes with the guarantee of support by the people who built all parts of the system.
-
-
-positioning - web-based solutions geared towards domain.
-more flexible, more reliable, architecture that adapts to your system.
-all the benefits of proprietary software without the lockin
-solution focus
-
-Structure Notes
----------------
-
-
-OpenGeo Core
-
-Ideal structure of OpenGeo 50 people, $10 million in revenue, starting new initiatives, incubating new opengeos, core software improvement, making money for partners, funding others for core development.
-
--> different because we employ people, from apache/osgeo.
-
-
-Biz Team
-
-5 Sales managers - US, South America, Europe, Mid-East/Africa, Asia/Pacific
- - Each mostly manages partners, builds networks, sets strategy
-3 marketing - build brand, run events, write whitepapers do PR, marketing automation, advertising. Plus they have a big budget to outsource
-2 biz dev, strategy, partner program
-
-
-
-Outreach Team
-
-5 on training / education - continually refining and adding material, making webinars, doing online trainings, and training trainers - so partners can run lots of trainings around the world.  Also reaching out to college courses and helping develop longer form course material.
-
-2 on full time documentation, core open source docs, reference materials, interactive docs / recipes, new examples, tutorials.
-
-5-8 Flex expert implementors / demo creators / partner trainers.  Team will be able to go out and make new cool geo apps.  Should be pros, able to take on any project, but team should always be taking on 'interns', getting more people as experts.  These guys should serve as second line support, always know the answer.  If they are between paid projects then they do pro bono mapping activities.  They also do all the support calls, so must have slack to handle that.
-
-Core Devs - main responsibility is making beautiful code.  Are not very product driven, but take lots of input from product teams.  But also respond a lot to community needs, ensure great architecture and help plan for roadmaps from product teams.  Main goal is to always sure speed, scalability and flexibility in the core
-
-2 Java (geoserver/gwc/geotools/jts)
-1 C    (PostGIS, GEOS, gdal?)
-3 Javascript (OpenLayers, GeoExt)
-1 Python (GeoNode)
-
-2-3 product teams of 3-6 each.  Suite and GeoNode.  Could be a cloud product, could be a new thing we incubate, could be a mobile thing.  If successful it may spin out, but leave 1-2 core devs behind at opengeo.  Each will have a a product manager, at least a couple devs, and balance of needed designers / web devs / etc.  Will contribute substantially to core code bases, putting down at lower levels whenever possible.  And can also leverage the core devs, count on deliverables from them, etc.  Each product will have clients, who fund it, whether by direct project work or by buying the final product.  Also 1-2 QA / testing people who are shared between product teams (and core devs can leverage them)
-
-Designers - should have at least 2-3 dedicated designers.  Interaction, graphic, web, etc.  There may be dedicated ones on products, but also a pool setting the brand and image of OpenGeo as a whole.  Everything should look tight and have real interaction depth.  They will do continual user testing and refinement, work closely with each product, but also set deadlines across all.  Look to reuse metaphors and code.
-
-Ops - 1 Sys admin, 1 accountant, 1 HR
-
-Limits
-
-
 
 
