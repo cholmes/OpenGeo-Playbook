@@ -14,4 +14,5 @@ Overlaying the use cases laid out in :ref:`vision` on to the technical depth nee
   mashup
   geoprocessing
   spatialize
+  search
   other_tech

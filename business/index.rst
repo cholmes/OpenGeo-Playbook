@@ -18,5 +18,3 @@ This section is a twist on a typical 'business plan', since our goals and struct
 
 
 
-
-
