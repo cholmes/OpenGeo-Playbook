@@ -25,14 +25,21 @@ Training and Documentation
 
 Our main investments to promote our software are in documentation and training.  Open Source in general suffers from a (often correct) perception that it is not as well documented and is harder to get up to speed with, even though it is often more powerful.  We believe that making the software accessible is almost as important as the software itself.  Sometimes open source companies try to make documentation or training materials a revenue stream.  We view them as some of our best marketing materials, as they make our software accessible to more people, and are one of the first impressions the software makes.  We also invest heavily in great workshop material, which we deliver at many conferences.  We also make all of our training material available to everyone under a Creative Commons license, so that it can spread widely.  We do also sell training, and include training in our Enterprise packages, for those who want dedicated time from us to help them.  Our partners also can give trainings, translating it to other languages, and using it as a revenue stream or marketing.  We believe it is some of the best marketing, as everyone who uses the training materials walks away with more knowledge and tools to hopefully help them in their job.  The more people who use the software the higher chance there is that some of them will need further services from OpenGeo.
 
-Branding
-~~~~~~~~
+Website and Social Media
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Advertising
-~~~~~~~~~~~
+We use our website to educate people on the options, filling it with demos, white papers, case studies and product information.  We are planning to do more of this than we have so far.  Our goal is to offer a place to learn all about what we offer before one makes the decision to invest the time to download it and install.  We strive for a very professional website, to project an image of true reliability, which we believe we consistently back up with our actions.  Complemented the website is our embrace of social media, working to blog consistently and engage with others over twitter.  The goal of all of this is to make everyone feel comfortable, from very conservative people who need to go to a destination with lots of depth to those adept with the latest online engagement.  We prefer the more conversational style, but strive to make all feel comfortable through our online presence.  Since we don't employ a salesforce and are distributed throughout the world our website extremely important as the primary focal point of how people learn about us and what we do.  
+
+
+Advertising and Press
+~~~~~~~~~~~~~~~~~~~~~
+
+OpenGeo currently uses Google Adwords at a low level, to try to reach people who may be interested but don't yet know about OpenGeo.  The nice thing about Adwords is that it makes things very data driven, so you can easily see the conversion cost from someone clicking on an ad to doing an action you care about.  We have also been using a lead scoring system called Marketo to help qualify leads, so that we can reach out to those who are most likely to be interested in an Enterprise contract to help them out.  We have not had great success with the system, as most of our paying customers are already using our software.  But it may just be that the time between trying out the Suite and becoming a client is on a longer time frame than we've seen yet.  As we get lower priced products this type of advertising will likely become more effective.  We have considered other advertising venues, but the data driven analytics possible with Google Adwords (or other online systems) is a plus for us with little money to spend.  In the past we experimented with a PR firm to get stories in magazines and online publications, but it did not seem worth the money for where we were at.  In general we anticipate spending more on advertising and press once we are fully recovering our costs, so as to make more people aware of our work, but it is not clear that it is the best use of our money, especially relative to making the software better.
 
 Conferences
 ~~~~~~~~~~~
+
+Conferences are an important outlet for us, as people are generally more receptive to learning about new technologies when they attend.  FOSS4G is by far our favorite conference, primarily for seeing our friends and allies, but it is also a great place to meet people who want to do more with our software.  We also try to attend regional conferences in the US, and a handful of European events.  We try to only attend conferences where we speak or give workshops.  We very much value attending, so as to talk to more people who actually use our software, or who have key reasons for not using it.  
 
 Messaging
 ~~~~~~~~~
@@ -47,15 +54,9 @@ Our messaging generally centers around a few themes:
 
 * Freedom from vendor lock-in, as our architecture is firmly rooted in open standards, and with open source any other vendor can offer similar services.
 
-* Web-based, more flexible, no per seat license fees, powerful, adaptable.
+* Web-based applications are the future, flexibly built to the task at hand, instead of requiring an expensive desktop tool and lots of training.  We push the edge of what is possible in a browser, and provide tools to build custom applications.
 
+Positioning
+~~~~~~~~~~~~
 
-Our marketing plan - open source as vehicle to get product out there.  Then education around it, followed by conferences, papers, advertising.  Fundamentally we just want to teach people about our work, and some percentage of them will need support and buy from us.  
-
-marketing message - solutions, not software.  A complete solution comes with the guarantee of support by the people who built all parts of the system.
-
-
-positioning - web-based solutions geared towards domain.
-more flexible, more reliable, architecture that adapts to your system.
-all the benefits of proprietary software without the lockin
-solution focus
+Relative to other Geospatial Servers we tend position ourselves as more standards compliant, faster (except for compared to MapServer), more reliable, and more flexible.  We are built for the web from the ground up, and our flexibility helps build for the task at hand.
