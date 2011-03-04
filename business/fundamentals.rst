@@ -6,7 +6,12 @@ Fundamentals
 Structure
 ~~~~~~~~~
 
-As our goal is to make open software for geospatial information we've decided to experiment with structures that prioritize that over making profit.  Whereas the goal of any publicly traded corporation is to 'maximize shareholder value' - make money - our goal is to 'maximize open source code'.  Corporations are now highly evolved animals, engineered to make money for all who hold an interest, with their products, ideas and services as the manifestation in the world that makes money possible.  Its instincts and motivations are to always seek out more growth to bring more shareholder value.  With OpenGeo we are seeking to engineer an animal whose instincts are to do whatever is best for the code.  Making money to support a team of developers is an effective way to further that, but the twist in motivations will likely mean that the most profitable route is not the one taken.
+Whereas the goal of any publicly traded corporation is to 'maximize shareholder value' - make money - our goal is to 'maximize open source code'. 
+So we've decided to experiment with structures that prioritize that over making profit.
+Corporations have evolved to make money for all who hold an interest.
+A corporation's instincts and motivations are to always seek out more growth to bring more shareholder value.
+With OpenGeo we are seeking to engineer an animal whose instincts are to do whatever is best for the code.
+Making money to support a team of developers is an effective way to further that, but because OpenGeo's goal is not to grow or bring in value for shareholders, it may not always take the most profitable route.
 
 Of course we recognize that the world is not so black and white - corporations are filled with people who seek meaning, whose primary goal is to add great things to the world.  And this very often aligns with the goal of making money, indeed people who are doing their job because they believe in it do the best work.  But when their goals are at odds with those of the corporation then they are usually subverted by the structure.  The small twist with OpenGeo is we start with the premise of maximizing the mission, which lets us evaluate growth based on that - are we adding something useful, or are we just doing it to make more money?  We even realize that at some point the best thing for the code may be for OpenGeo to not exist.  If all users of the code naturally contribute according to their ability then there will be little reason for OpenGeo to exist - it could just be a loose collection of independent software developers who are funded cooperatively by everyone who benefits from their work and can afford to pay.  
 
