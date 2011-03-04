@@ -19,18 +19,32 @@ OpenGeo, on the other hand, puts its mission first.
 It evaluates growth against its mission; if it is best for the code, the OpenGeo might even dissolve itself.
 For example, it could replace itself with a cooperatively funded collection of independent developers.
 
-OpenGeo's current structure is a division of a 501c3 non-profit called OpenPlans.  OpenGeo has received generous angel investment from OpenPlans and its primary benefactor, Mark Gorton.  But for the past few years the goal has been to become completely self-sustaining by competing in the market while simultaneously furthering the mission.  In the next year or two OpenGeo will likely start to make more revenue than its costs.  In a for profit structure this would go back to investors.  In the current structure this money gets returned to OpenPlans, to sustain its more charitable operations, or to help it start new ventures like OpenGeo that further its overall goals.  
+OpenGeo's current structure is a division of a 501c3 non-profit called OpenPlans.  
 
-At some point it may make sense to shift this structure, perhaps following Mozilla's model of spinning out a corporation that is owned by a foundation.  And/or becoming a B-corp.  We don't feel there is currently an ideal structure for what we are trying to do, and as the structure evolves we will always keep the goal of making open source software above that of making money.
+OpenGeo has received generous angel investment from OpenPlans and its primary benefactor, Mark Gorton.  But for the past few years the goal has been to become completely self-sustaining by competing in the market while simultaneously furthering the mission.  
+In the next year or two OpenGeo will likely start to make more revenue than its costs.  
+In a for profit structure this would go back to investors.  
+In the current structure this money gets returned to OpenPlans, to sustain its more charitable operations, or to help it start new ventures like OpenGeo that further its overall goals.  
+
+At some point it may make sense to shift this structure, perhaps following Mozilla's model of spinning out a corporation that is owned by a foundation.  
+And/or becoming a B-corp.  
+We don't feel there is currently an ideal structure for what we are trying to do, and as the structure evolves we will always keep the goal of making open source software above that of making money.
 
 
 
 Revenue 
 ~~~~~~~
 
-OpenGeo formed to bring about a transformation from a services company to a product company.  (should make a history section, somewhere else).  The ideal primary source of revenue is OpenGeo Suite Enterprise contracts, which at the core provide unlimited bug fixes and advice on stable software packages composed of the open source projects we support.  These are a great alignment of incentives, as clients desire software they can rely upon, without having to worry if anything goes on.  And with sufficient Enterprise contracts OpenGeo's incentive becomes to make the best bug free software, so that we don't have to spend our time fixing individual bugs.  In a open source project supported by consulting and services there is almost a perverse incentive to make slightly buggy software, so that ones services are always in demand.  With subscriptions at the core the incentive is to make the best software, get it as widely used as possible, and rely on organizations who would rather pay money to not have to worry and waste time.  The most successful open source companies have all relied on this strategy, so OpenGeo is just following in the footsteps of Red Hat, Spring Source, Xen, JBoss, MySQL and more.  
+OpenGeo formed to bring about a transformation from a services company to a product company.  (should make a history section, somewhere else).  
+The ideal primary source of revenue is OpenGeo Suite Enterprise contracts, which at the core provide unlimited bug fixes and advice on stable software packages composed of the open source projects we support.  
+These are a great alignment of incentives, as clients desire software they can rely upon, without having to worry if anything goes on.  
+And with sufficient Enterprise contracts OpenGeo's incentive becomes to make the best bug free software, so that we don't have to spend our time fixing individual bugs.  
+In a open source project supported by consulting and services there is almost a perverse incentive to make slightly buggy software, so that ones services are always in demand.  With subscriptions at the core the incentive is to make the best software, get it as widely used as possible, and rely on organizations who would rather pay money to not have to worry and waste time. 
+ The most successful open source companies have all relied on this strategy, so OpenGeo is just following in the footsteps of Red Hat, Spring Source, Xen, JBoss, MySQL and more.  
 
-OpenGeo's focus on geospatial software is more niche, but our revenue desires aren't nearly so ambitious.  The reason for shifting to a product company is to have more control over the roadmap, and to be able to take risks to incubate new projects and products.  With just doing services the roadmap is completely dictated by the clients.  And it is very hard to get clients to fund much of the unglamorous work of Open Source, like community management, releases, and bug fixes.  With support revenue this becomes something required by clients.  
+OpenGeo's focus on geospatial software is more niche, but our revenue desires aren't nearly so ambitious.  
+The reason for shifting to a product company is to have more control over the roadmap, and to be able to take risks to incubate new projects and products.  With just doing services the roadmap is completely dictated by the clients.  
+And it is very hard to get clients to fund much of the unglamorous work of Open Source, like community management, releases, and bug fixes.  With support revenue this becomes something required by clients.  
 
 We will never entirely give up on services, and indeed in the transition to a full product company services are required.  In the long term we hope to push most of the implementation and training work to our partners, with OpenGeo focusing on core software development, documentation, training material production, and bug fixing.  In the short term there is not enough of an ecosystem that has the skills to do truly great implementations, so we continue to do services.  Some developers will always do services, because it is really useful to stay in touch with how people are actually using the product.  A number of the services OpenGeo currently does is also things that are directly on the core roadmap already.  So service work will also be used as a type of funded research and development (R&D).  OpenGeo will likely never have a huge R&D budget, but instead will rely on clients to fund things that are of future interest, since we look for market feedback in all we do.  These clients will be more early adopter types, who can see what's coming next, and we may prototype some pieces to point the way forward.  But we'll always do services for core development of our roadmap.
 
