@@ -4,8 +4,27 @@
 Open Data
 ---------
 
-One of OpenGeo's primary goals is to help open more geospatial data, and to also lower the barrier to entry for creation of new geospatial information.  We believe that as much data as possible should be open.  Every organization, both public and private, should make their data available in open formats that others can analyze and use.  The problems of our world are ever increasing, and the only way to solve them is to give everyone a chance to tackle them.  To leverage new networks to come up with novel solutions, not just looking to traditional experts.  As Linus Torvald said, 'with enough eyeballs all bugs are shallow'.  We believe this extends to all the problems of the world - global warming, government corruption, poverty, disaster reduction, water management, property rights, and on and on.  Obviously open data is only going to be a small part of real solutions to these problems, but having the information open will help more people spot 'bugs' - small things that are actually wrong and easily correctable.  
+One of OpenGeo's primary goals is to help open more geospatial data, and to also lower the barrier to entry for creation of new geospatial information.  
+We believe that as much data as possible should be open.  
+Every organization, both public and private, should make their data available in open formats that others can analyze and use.  
+The problems of our world are ever increasing, and the only way to solve them is to give everyone a chance to tackle them.  
+To leverage new networks to come up with novel solutions, not just looking to traditional experts.  
+As Linus Torvald said, 'with enough eyeballs all bugs are shallow'.  
+We believe this extends to all the problems of the world - global warming, government corruption, poverty, disaster reduction, water management, property rights, and on and on.  
+Obviously open data is only going to be a small part of real solutions to these problems, but having the information open will help more people spot 'bugs' - small things that are actually wrong and easily correctable.  
 
-Our method of working towards open data is not to enforce our beliefs on anyone.  We just make the best software possible, that has default of openness built in to it.  These defaults can always be turned off, as we understand that many just are not ready for full openness.  But we want it so when they are ready it's a flip of the switch of their existing system, instead of a big debate of whether it's worth the money.  But the decision to use our software will be made because it's the best tool for the job, not because it's open or not.  People may pick it because it's awesome google earth support, or that it's flexible enough to be integrated in another system that want to add maps.  But it automatically shares all configured data not just as maps, but also in raw data formats like GML, Shapefile, GeoJSON and GeoRSS.  We include very granular security options, so that the same system can be used for the pieces that can not be open.  This lowers the friction of data going from closed to open, as the tools for each can be the same.
+Our method of working towards open data is not to enforce our beliefs on anyone.  
+We just make the best software possible, that has default of openness built in to it.  
+These defaults can always be turned off, as we understand that many just are not ready for full openness.  
+But we want it so when they are ready it's a flip of the switch of their existing system, instead of a big debate of whether it's worth the money.  
+But the decision to use our software will be made because it's the best tool for the job, not because it's open or not.  
+People may pick it because it's awesome google earth support, or that it's flexible enough to be integrated in another system that want to add maps.  
+But it automatically shares all configured data not just as maps, but also in raw data formats like GML, Shapefile, GeoJSON and GeoRSS.  
+We include very granular security options, so that the same system can be used for the pieces that can not be open.  
+This lowers the friction of data going from closed to open, as the tools for each can be the same.
 
-We seek to embed our open solutions in to real work.  A worry we have about many of the latest open government efforts is that they are just 'trendy'.  They are afterthoughts to the actual process of creating data, and it's not embedded in the workflows of real workers.  So our focus in open data is on enabling real collaboration, giving people a 'win' for opening their data, not just opening data because it's the popular thing to do and the politicians can get some press releases out of it.  By making use of the same system for public open data efforts and internal collaboration we help ensure that data stays open even if the latest political trend moves on to something else.  
+We seek to embed our open solutions in to real work.  
+A worry we have about many of the latest open government efforts is that they are just 'trendy'.  
+They are afterthoughts to the actual process of creating data, and it's not embedded in the workflows of real workers.  
+So our focus in open data is on enabling real collaboration, giving people a 'win' for opening their data, not just opening data because it's the popular thing to do and the politicians can get some press releases out of it.  
+By making use of the same system for public open data efforts and internal collaboration we help ensure that data stays open even if the latest political trend moves on to something else.  
