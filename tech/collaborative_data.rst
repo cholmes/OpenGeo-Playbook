@@ -3,15 +3,32 @@
 Collaborative Data
 ~~~~~~~~~~~~~~~~~~
 
-Though OpenStreetMap has clearly led the way on collaborative data OpenGeo believes that there should be technical alternatives, that interact with OSM with their standards.  The core collaborative data infrastructure that we see is inspired more by open source software than wikipedia - a number of diverse projects with different focuses, different communities and norms, and different tools.  One of OpenGeo's targets is existing government workflows, helping them be more collaborative and open internally, and working with their current tools.  So the core engine will be GeoServer and its transaction hooks.  The current protocols are WFS-T and WFS-V, but it should also implement OGC GeoSynchronization spec, OpenStreetMap's API and ESRI's Open GeoServices transactions.  The other standards piece that we want to see in the world is the geospatial equivalent of a 'patch' that can be shared between systems.  
+Though OpenStreetMap has clearly led the way on collaborative data OpenGeo believes that there should be technical alternatives, that interact with OSM with their standards.  
+The core collaborative data infrastructure that we see is inspired more by open source software than wikipedia - a number of diverse projects with different focuses, different communities and norms, and different tools.  
+One of OpenGeo's targets is existing government workflows, helping them be more collaborative and open internally, and working with their current tools.  
+So the core engine will be GeoServer and its transaction hooks.  
+The current protocols are WFS-T and WFS-V, but it should also implement OGC GeoSynchronization spec, OpenStreetMap's API and ESRI's Open GeoServices transactions.  
+The other standards piece that we want to see in the world is the geospatial equivalent of a 'patch' that can be shared between systems.  
 
-The engine should make it possible to stay in sync with OSM or another versioning data store, with a review engine for organizations to apply their own workflow to crowdsourced data.  That workflow may include automated checks (running a suite of geoprocessing analysis, for example to make sure that topology is maintained) and user quality assurance, as well as post processes like tile creation and cache truncation, as well as notification to interested users and machines.  
+The engine should make it possible to stay in sync with OSM or another versioning data store, with a review engine for organizations to apply their own workflow to crowdsourced data.  
+That workflow may include automated checks (running a suite of geoprocessing analysis, for example to make sure that topology is maintained) and user quality assurance, as well as post processes like tile creation and cache truncation, as well as notification to interested users and machines.  
 
-There needs to be intuitive web-based tools [#f8]_, as well as great mobile tools that work offline.  This will take significant interaction design work, to make the editing, versioning, merging and conflict resolution accessible to anyone, even if they have no training.  This user interface work is one of the biggest challenges, and will take constant iteration over many projects.  Existing desktop GIS's should also all have plugins that work with the versioning backend.  And the versioning engine should be able to back on to ArcSDE Versioning, Oracle Workspace Manager, PostGIS and others.  
+There needs to be intuitive web-based tools [#f8]_, as well as great mobile tools that work offline.  
+This will take significant interaction design work, to make the editing, versioning, merging and conflict resolution accessible to anyone, even if they have no training.  
+This user interface work is one of the biggest challenges, and will take constant iteration over many projects.  
+Existing desktop GIS's should also all have plugins that work with the versioning backend.  
+And the versioning engine should be able to back on to ArcSDE Versioning, Oracle Workspace Manager, PostGIS and others.  
 
-Another key is the social infrastructure around collaborative geospatial data, it needs to rival things like sourceforge and github in the open source software world.  There should be easy ways to join up with others, find a project to collaborate on, or to set up something for internal collaboration.  It needs to have all the tools to help collaboration, like issue trackers, notifications, wikis, and analysis tools.  And should also track reputation and be able to reward good contributions.
+Another key is the social infrastructure around collaborative geospatial data, it needs to rival things like sourceforge and github in the open source software world.  
+There should be easy ways to join up with others, find a project to collaborate on, or to set up something for internal collaboration.  
+It needs to have all the tools to help collaboration, like issue trackers, notifications, wikis, and analysis tools.  
+And should also track reputation and be able to reward good contributions.
 
-The ultimate piece for this will be distributed version control.  It's still an open research question if we should start with a DVCS like git and add spatial to it, or start with a spatial engine and add versioning.  Or some hybrid, like couchdb, which has a syncing model that can be used for versioning, and some decent spatial support.  But one shouldn't need a central server.  This should ideally enable someone to 'clone' someone else's geospatial repository and apply their own QA, so you can have government workflows that easily collaborate with private individuals and companies, with geospatial edits easily flowing between all systems, keeping great track of provenance and reputation so as to build dynamic trust metrics to judge the reliability of a dataset.
+The ultimate piece for this will be distributed version control.  
+It's still an open research question if we should start with a DVCS like git and add spatial to it, or start with a spatial engine and add versioning.  
+Or some hybrid, like couchdb, which has a syncing model that can be used for versioning, and some decent spatial support.  
+But one shouldn't need a central server.  
+This should ideally enable someone to 'clone' someone else's geospatial repository and apply their own QA, so you can have government workflows that easily collaborate with private individuals and companies, with geospatial edits easily flowing between all systems, keeping great track of provenance and reputation so as to build dynamic trust metrics to judge the reliability of a dataset.
 
 * WFS-Versioning or some open protocol, perhaps REST based.  OGC's GeoSynchronization is good to implement, but not sufficient for versioning, just review.
 
