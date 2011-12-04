@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Philosophy &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Tech" href="index.html" />
+      <link rel="next" title="Vision" href="vision.html" />
+      <link rel="prev" title="Tech" href="index.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/philosophy">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+  <li>Philosophy</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="vision.html" title="Vision"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="index.html" title="Tech"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="philosophy">
+<span id="id1"></span><h1>Philosophy<a class="headerlink" href="#philosophy" title="Permalink to this headline">¶</a></h1>
+<p>Central to OpenGeo&#8217;s technical philosophy is open source, not just the license but in the strength of real communities.  Diverse contributors working towards their own purpose but taking the time to collaborate build better software than any group focused on a narrow problem.  We want a diverse ecosystem around the core projects we work on, so that the technology will live on even if OpenGeo as an organization dies for any reason.</p>
+<p>The practical technical implications of that is that we architect small, flexible pieces, and work to push code we write down to the lowest library levels.  Those libraries are already used by many developers, and our contributions make those libraries even better and more flexible, building a virtuous circle of more contributors using it for more diverse purposes.  Though initially it is more work to take the time to do things right, we&#8217;ve seen time and again that the extra work pays off <a class="footnote-reference" href="#f1" id="id2">[1]</a>.  So when we start a new project like GeoNode we take the time to improve all the underlying API&#8217;s to meet our needs, even though it would be far more efficient in the short term to just code what we need.  We&#8217;ll also take the time to start new open source projects for functionality that others can use, instead of just making them work with our needs <a class="footnote-reference" href="#f2" id="id3">[2]</a>.</p>
+<p>So the core of philosophy is to not take shortcuts, and to seize any chance to improve the underlying libraries.  But we also are not continually redoing things in the abstract, we wait till there is a clear advantage to refactoring things in a new way, where it will help our clients and users.</p>
+<p>We also rely heavily on open standards, but are not slaves to them.  Open Standards have been a huge advantage to getting acceptance for our open source software, and we use them as the first choice for how our software stack is architected <a class="footnote-reference" href="#f3" id="id4">[3]</a>.  The primary pathway for how each piece interacts with another is through an open standard, so that we can easily swap out one piece for another.  But we will often extend standards to get &#8216;more&#8217; out of them, be that more performance, more options, or more flexibility.  We also always implement leading ad hoc standards, things that don&#8217;t go through a real standards process but are widely used.  If a standard does not exist for something we do want to do we&#8217;ll also try to find other software that does the same thing and follow and collaborate with them, to hopefully help lead to a good open standard in the future.</p>
+<p>The other core philosophy is to leverage the work of others as much as possible.  We don&#8217;t want to be writing new libraries for functionality that other open source projects handle, and if it doesn&#8217;t quite handle all our needs we&#8217;ll try to contribute to them to make it work for us.  This has been a huge advantage, as we&#8217;ve been able to add huge amounts of functionality by just making an existing library work for us <a class="footnote-reference" href="#f4" id="id5">[4]</a>.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>The earliest example of this for us was with GeoTools datastores.  Early on GeoServer made the choice to not try to build everything, but instead to work with a wider community on the GeoTools project to do all the core geospatial functionality like data access, reprojection, rendering, etc.  This initially was a whole lot of work, to get many people to agree on the ideal data structure that could handle all the diverse needs.  We took the time to participate in all the discussions, and then did the first datastore implementation, for PostGIS.  Within a year other people had contributed datastores for Oracle, ArcSDE and Shapefiles, probably the three most important formats to support.  Since we took the time to architect things right we didn&#8217;t have to write any additional code to make those options for GeoServer, instantly increasing the potential user base.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>GeoExt is a nice example of this.  At the time we helped start it many organizations had been working with OpenLayers and Ext.js, but all of us were just putting things together for our own use.  We teamed up with Camptocamp, who had even more experience than us with Ext.js, and took the time to do a new open source project.  We all realized that together we&#8217;d make better software if we collaborated on the pieces that we all had to do.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[3]</a></td><td>The best example of this is probably GeoWebCache.  Where most every other server project at the time just wrote a cache integrated in their rendering pipeline we started an independent open source project that could cache any WMS.  We bundled it with GeoServer, so it would work with no installation.  But the way it works with GeoServer is by making standard WMS requests, which opens it up to be used with any WMS server.  People now use it in production with a variety of servers, including MapServer and ArcGIS Server.  As the project grew we also had it implement even more standards, including WMS-C, TMS, WMTS, Google Maps, Bing Maps, and KML Superoverlays.  It even implements WMS as an output, so that any standard WMS client can use it.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[4]</a></td><td>In GeoServer we&#8217;ve gotten pdf output by incorporating iText, awesome templating with Freemarker, charts on maps with jfreechart, svg output with batik, rest api with restlet, security with spring security, etc. etc.  With GeoExt we got a huge win by leveraging Ext.js.  The great thing is that good choices here lead to improvements in our software with very little additional work.  Ext.js gets more GUI controls with every release, and we just have to upgrade to take advantage of it.  We recently upgraded Spring Security and got OpenID and CAS support for our users.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="index.html" title="previous chapter">Tech</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="vision.html" title="next chapter">Vision</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="index.html" title="previous chapter">Tech</a></li>
+            <li>Next: <a href="vision.html" title="next chapter">Vision</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/philosophy.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Tech &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="next" title="Philosophy" href="philosophy.html" />
+      <link rel="prev" title="Future Plans" href="../business/future.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/index">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+  <li>Tech</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="philosophy.html" title="Philosophy"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="../business/future.html" title="Future Plans"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="tech">
+<span id="id1"></span><h1>Tech<a class="headerlink" href="#tech" title="Permalink to this headline">¶</a></h1>
+<p>This section on technology is not meant to be a comprehensive roadmap, though in time it hopefully will link out to very detailed roadmap items.  Instead it is meant to present at a high level our goals for geospatial software.  These will change and be influenced by clients and users, but the intent of this is to lay out our current thinking on the technical challenges.  We doubt we&#8217;ll be the ones to build all or even most of the things here, but these are the capabilities we want to exist in the world, and the point of our funding is to enable us to spend time on them.  This hopefully will be an evolving document, reflecting where the software is, what else is out there in the world, and who is involved in building it.  More operational documents will focus on what are immediate roadmaps are.</p>
+<blockquote>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="philosophy.html">Philosophy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Vision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_challenges.html">Technical Challenges</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="imagery.html">Browse all imagery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collaborative_data.html">Collaborative Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dil_mobile.html">Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mashup.html">Mashup Creation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoprocessing.html">Geospatial Processing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spatialize.html">Spatializing non-spatial data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="other_tech.html">Other Tech to be built</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="../business/future.html" title="previous chapter">Future Plans</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="philosophy.html" title="next chapter">Philosophy</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="../business/future.html" title="previous chapter">Future Plans</a></li>
+            <li>Next: <a href="philosophy.html" title="next chapter">Philosophy</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/index.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Mashup Creation &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Technical Challenges" href="tech_challenges.html" />
+      <link rel="next" title="Geospatial Processing" href="geoprocessing.html" />
+      <link rel="prev" title="Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments" href="dil_mobile.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/mashup">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+    <li><a href="tech_challenges.html" accesskey="U">Technical Challenges</a> &raquo;</li>
+  <li>Mashup Creation</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="geoprocessing.html" title="Geospatial Processing"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="dil_mobile.html" title="Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="mashup-creation">
+<span id="mashup"></span><h1>Mashup Creation<a class="headerlink" href="#mashup-creation" title="Permalink to this headline">¶</a></h1>
+<p>It should be easy for any user to create a &#8216;mash-up&#8217;, combining data from different sources, styling it to show what they want, and possibly annotating or editing the source data.  For people coming from a GIS background this is just basic GIS.  But in a web environment we can make the whole process social, persisting all the maps that everyone makes.  We call these mash-ups because they are just like the types of map mashups that take a programmer who knows javascript.  They should become accessible to everyone, to manipulate geospatial information and then by default persist the results for all to see.  With advanced permissioning to make it private if they just want to share with a small group or to keep it private while working on it.  And each mashup should be able to be copied, to see the &#8216;source&#8217; of the layers and styles and change them to be another mashup.  Ideally we keep track of the provenance of who made what changes when.</p>
+<p>To get there we need better through the web styling.  Styler is a decent start, but there&#8217;s a whole lot more functionality that could be added to get to the level of a standard GIS.  And we should aim to exceed that level of usability, so that any normal web user would find it intuitive to take someone else&#8217;s mashup and make it their own.  We also need annotation and editing, for cases when data needs to be tweaked.  And we ideally also need wizards for application creation, so anyone can set not only the layers but also the tools they want to expose to others.  Eventually those tools should incorporate geospatial processing (link to next section).</p>
+<p>Users who want to take mashups further should be able to figure out what&#8217;s going on from the mashup itself, and build it up in to a more complex application.  So turn it from a simple display of data to an application that others can use.  This might include adding more tools that lets other users add layers, edit, export or analyze data.  This will obviously start to get in to programming, but even there it should be targeted at programers who don&#8217;t already &#8216;know&#8217; geospatial, who instead have a problem that they want to solve and can quickly learn how to tap in to the power of geospatial.</p>
+<ul class="simple">
+<li>More options in Styler, including <a class="reference external" href="http://projects.opengeo.org/styler/wiki/Symbolizers">better symbolizers</a>, <a class="reference external" href="http://projects.opengeo.org/styler/wiki/StyleQuantities">thematic mapping</a>, <a class="reference external" href="http://projects.opengeo.org/styler/wiki/StyleCategories">Unique Values</a>, <a class="reference external" href="http://img.skitch.com/20090217-b99x3j9a3ex9g5gayubqja46dt.png">copy and paste</a>, and more labeling options</li>
+<li>An <a class="reference external" href="http://projects.opengeo.org/styler/wiki/ImageManager">image manager</a> that lets people upload individual images and .ttf font symbol sets.</li>
+<li>Integration of <a class="reference external" href="http://docs.geoserver.org/latest/en/user/community/css/index.html">CSS Styling</a> in to Styler</li>
+<li>Standardization of CSS styling, ideally with a common implementation between geoserver css, cascadenik and gss.</li>
+<li>Wizards for creation of GXP applications, that can export new ones from an existing GeoExplorer map and also mash-up someone else&#8217;s app.</li>
+<li>Editing and annotation tools for mashups.  Ability to create new layers on the fly.</li>
+<li>GeoNode expansion of &#8216;maps&#8217; to &#8216;apps&#8217;, supporting provenance and better export.</li>
+<li>Interaction Design work to make styling and application creation accessible to a much wider audience.</li>
+<li>CSS styling language, that can be edited directly on the client side and reflected in the GUI, so designers can easily make styles in a way they&#8217;re comfortable with.</li>
+<li>Great programming toolkits that combine processing and data to abstract the problems of geospatial from web programmers.</li>
+</ul>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="dil_mobile.html" title="previous chapter">Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="geoprocessing.html" title="next chapter">Geospatial Processing</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="dil_mobile.html" title="previous chapter">Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</a></li>
+            <li>Next: <a href="geoprocessing.html" title="next chapter">Geospatial Processing</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/mashup.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Technical Challenges" href="tech_challenges.html" />
+      <link rel="next" title="Mashup Creation" href="mashup.html" />
+      <link rel="prev" title="Collaborative Data" href="collaborative_data.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/dil_mobile">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+    <li><a href="tech_challenges.html" accesskey="U">Technical Challenges</a> &raquo;</li>
+  <li>Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="mashup.html" title="Mashup Creation"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="collaborative_data.html" title="Collaborative Data"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="disconnected-intermittent-low-bandwidth-dil-and-mobile-environments">
+<span id="dil-mobile"></span><h1>Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments<a class="headerlink" href="#disconnected-intermittent-low-bandwidth-dil-and-mobile-environments" title="Permalink to this headline">¶</a></h1>
+<p>Though OpenGeo is entirely focused on web-based environments, using the browser as the primary user interface, we intend for all of our sofware to be able to function offline and in situations with limited or occasional bandwidth.  Part of this is possible due to open source software - with no license fees and the increasing power and storage of mobile computers we can often just include our server side software on clients.  One can also imagine situations where a local office isn&#8217;t online or has really low bandwidth, but can run a small dedicated computer that can sync and serve data locally.  We&#8217;d like to make the software very smart with regards to caching and syncing, where it can only send the changes, and also automatically figure out what data to sync first, based on statistics of actual use.  This should be possible with both vector and raster data.</p>
+<p>We also plan to make our software available on even more limited devices, like mobile phones.  Our first goal will be to get OpenLayers running on iPhone and Android applications, which is almost complete.  After that will likely be a toolkit like GeoExt that is geared towards making custom mobile applications.  These devices will not be able to run our server software, but we&#8217;ll leverage html5 local storage and build in syncing smarts so that it can also function if there isn&#8217;t a cell phone signal.  We&#8217;ll also integrate with the GPS and enable editing and merging with conflict resolution when back online.</p>
+<p>The advances in offline environments should also dovetail with general speed in connected environments, adding smarts for moving data around, so that it is close to the end user.  Geospatial information can be huge, so we want to have it be in the right places when people need it.  But also to be smart about when to move the process to the data, and just supply the result to another location.</p>
+<ul class="simple">
+<li>GeoWebCache truncation based on transactions, georss feeds, active notification / webhooks, style changes, etc.</li>
+<li>GeoWebCache LFU and LRU cache, with statistic-based seeding, both of existing datasets that change and new data that might be added.</li>
+<li>Browser coordination of notifications and tile truncation, to automatically change data as it is edited, possibly with comet or hummingbird, or some other active client push, for real-time editing and collaboration</li>
+<li>Implementation and contribution to geospatial synchronization and notification standards, especially for vector data.  This is in many ways a subset of geospatially collaboration topics, but should aim for wider standard-based collaboration, to be able to sync with any data source, and have efficient transfer of differences.</li>
+<li>Mobile vector and raster caching, likely using HTML5 mobile storage standards.</li>
+<li>iPhone and Android javascript toolkits, improving the openlayers core for touch events, and making reusable GUI components like GeoExt does for standard web apps.</li>
+<li>Automatic federation and synchronization of data, based on usage and location.  Should be useful for even fully connected nodes, as geospatial data can get huge, so it should anticipate where it may need to be for analysis and processing.</li>
+<li>Methods for moving physical media and having it sync seamlessly with updates and merging/conflict resolution.</li>
+</ul>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="collaborative_data.html" title="previous chapter">Collaborative Data</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="mashup.html" title="next chapter">Mashup Creation</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="collaborative_data.html" title="previous chapter">Collaborative Data</a></li>
+            <li>Next: <a href="mashup.html" title="next chapter">Mashup Creation</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/dil_mobile.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

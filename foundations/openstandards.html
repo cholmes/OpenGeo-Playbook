@@ -1,0 +1,144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Open Standards &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Foundations" href="index.html" />
+      <link rel="next" title="Open Data" href="opendata.html" />
+      <link rel="prev" title="Open Source" href="opensource.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="foundations/openstandards">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Foundations</a> &raquo;</li>
+  <li>Open Standards</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="opendata.html" title="Open Data"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="opensource.html" title="Open Source"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="open-standards">
+<span id="openstandards"></span><h1>Open Standards<a class="headerlink" href="#open-standards" title="Permalink to this headline">¶</a></h1>
+<p>Whenever possible OpenGeo truly uses open standards.  This to us is not just &#8216;implementing&#8217; in order to check a box.  We truly believe in the diverse ecosystem of technology that open standards enable.  This enables people use our work in conjunction with others, and indeed opens the door to more innovative components that may not be open source.  Any component of ours could be swapped out for another, as open standards are the way we have the communicate internally.</p>
+<p>Whenever one component of our technology has to interact with another we first try to see if we can directly use an open standard.  If it&#8217;s not quite right then we try to make a compatible improvement, which we can hopefully get incorporated in to the standard.  If there is nothing available then we try to leverage all the best principles, for example using patterns like REST, which isn&#8217;t a standard per se, but makes it easy for other systems to implement.  If we ever require a binary protocol we fully document what it is so others can implement (more than just the source code, which naturally provides some minimal documentation).</p>
+<p>There is a range of &#8216;openness&#8217; to standards, but our preference is for ones that are free of license fees, publicly available, developed through a publicly visible, community process, and affirmed and maintained by a vendor-independent standards organization.  The WC3 specs are great.  In the geo world the Open Geospatial Consortium meets most of these requirements, and eventually we hope to help improve how they do things.   There have also been a number of nice open source centered standards, and perhaps OSGeo could play a more active role in standard development.  Once OpenGeo is generating enough revenue to contribute to other efforts we hope to help improve the development of geospatial standards. <a class="footnote-reference" href="#f2" id="id1">[1]</a></p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Our current preference is best typified by the GeoRSS standard, which was started as a completely open community process.  When it had sufficiently matured the OGC took it under its wing and made it an official standard, without trying to change it.  In our view the current standard OGC spec development process could use a couple improvements, like having decisions made online and not in person, and opening the spec development to anyone interested, not just paying members.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="opensource.html" title="previous chapter">Open Source</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="opendata.html" title="next chapter">Open Data</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="opensource.html" title="previous chapter">Open Source</a></li>
+            <li>Next: <a href="opendata.html" title="next chapter">Open Data</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/foundations/openstandards.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

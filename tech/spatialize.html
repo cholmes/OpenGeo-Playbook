@@ -1,0 +1,144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Spatializing non-spatial data &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Technical Challenges" href="tech_challenges.html" />
+      <link rel="next" title="Search" href="search.html" />
+      <link rel="prev" title="Geospatial Processing" href="geoprocessing.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/spatialize">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+    <li><a href="tech_challenges.html" accesskey="U">Technical Challenges</a> &raquo;</li>
+  <li>Spatializing non-spatial data</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="search.html" title="Search"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="geoprocessing.html" title="Geospatial Processing"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="spatializing-non-spatial-data">
+<span id="spatialize"></span><h1>Spatializing non-spatial data<a class="headerlink" href="#spatializing-non-spatial-data" title="Permalink to this headline">¶</a></h1>
+<p>Since there is much data out there that has an implicit though not explicit geospatial location we should make it easy to incorporate that data in to the geo world.  The main source of vector data is spreadsheets and basic access databases that have addresses, zip codes, census blocks, state names, or other boundaries.  All but addresses require an ability to &#8216;join&#8217; the column listing the boundary or point location with a set of geometries.  Ideally there&#8217;d be a bunch of well known, possibly crowdsourced, boundaries that everyone could use.  And then people would also have the option to easily upload a spatial dataset to be joined against.  And there&#8217;d be a nice GUI to select what information to join.</p>
+<p>For addresses we need a great geocoder, which is a problem that is far more than just software, but extends in to open data.  OpenAddress.org has made a good first pass at the effort, but we need much more data.  OpenStreetMap has some address information, and perhaps Microsoft and MapQuest can help now that they&#8217;re going that route.  Ideally most any location search application would use an open address database and also have the built in facilities to correct and improve the addresses.  Past the data there should be great geocoding software that can plug in to the open address database, but also would be easily to write plugins that work with other datasets.  The final piece for a truly great geocoder is to crowdsource the corrections - misspellings and alternate names and the ways people refer to a place in shorthand.  One could imagine collecting a database of all searches, and hopefully also instrument the results of those searches.  And then researches could apply natural language processing and other advanced techniques to build an engine that is quite good at correcting.</p>
+<p>For raster data there is scanned images and unrectified aerial images.  One should be able to upload either and then using online tools rectify them based on identifying points in common.  There are already several projects out there like this, but we&#8217;d like to bring that in to GeoNode so that more types of data can easily be uploaded.  Similar techniques and user interface likely could also be applied to vector data that&#8217;s not located geospatially, like CAD drawings.</p>
+<ul class="simple">
+<li>Open Source geocoder - there are already several, but not has great critical mass.  Ideally you want one that is pluggable and has lots of different backend implementations the way GeoTools or GDAL can read lots of different formats.</li>
+<li>Open Address database and tools - good possibilities with OSM and OpenAddress, but they need critical mass, and integrated tools that can be included in other web applications so users can correct data as they are using it.</li>
+<li>Web interface for &#8216;joins&#8217; - need to make a great GUI to join data together, and to upload data to be joined.  There is some proprietary stuff that does this, but nothing great in the open source world.  On the backend it&#8217;d be a great improvement to have GeoServer able to handle joins on the fly and across data formats (though realistically if you&#8217;re having people upload then you probably want to keep it in the same data source)</li>
+<li>GeoExt components for rectifying scanned images and photos.  And possibly also CAD files.</li>
+</ul>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="geoprocessing.html" title="previous chapter">Geospatial Processing</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="search.html" title="next chapter">Search</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="geoprocessing.html" title="previous chapter">Geospatial Processing</a></li>
+            <li>Next: <a href="search.html" title="next chapter">Search</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/spatialize.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

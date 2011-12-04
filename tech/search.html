@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Search &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Technical Challenges" href="tech_challenges.html" />
+      <link rel="next" title="Other Tech to be built" href="other_tech.html" />
+      <link rel="prev" title="Spatializing non-spatial data" href="spatialize.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/search">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+    <li><a href="tech_challenges.html" accesskey="U">Technical Challenges</a> &raquo;</li>
+  <li>Search</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="other_tech.html" title="Other Tech to be built"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="spatialize.html" title="Spatializing non-spatial data"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="search">
+<span id="id1"></span><h1>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h1>
+<p>Searching and finding geospatial information is perhaps the least solved problem OpenGeo is hoping to help tackle.  The first level is just searching for data sets, ignoring data points.  The traditional approach has been to make a &#8216;catalog&#8217;, but there is as of yet nothing to aggregate everything in catalogs, and they haven&#8217;t really taken off.  Google has been attempting to crawl geospatial information, but with their consumer focus they haven&#8217;t spent much good time on finding actual sets of data, and they only really try on KML and GeoRSS, neither of which is great for representing an entire set of data.  ESRI has made some decent strides with their ArcGIS Servers, which all have web accessible root pages, so they can get crawled and searched by Google.</p>
+<p>GeoNode is our framework for helping to solve the problem.  Initially we&#8217;ve just focused on properly exposing the data - putting data and metadata together in one easily accessible web page.  And each GeoNode has a catalog that can be searched.  The next steps are to make the data web pages more accessible to google, so they are easily crawled and searched by any web engine.  And also to start to tackle federated search, being able to do a search across GeoNodes.  The other piece is to bring social metadata - comments, rating, tags, views - in to the same page, so that other systems can more easily rank and retrieve better search results.  In the short term we&#8217;re not looking for federated search to really solve the problem, but just to easily search across a few known locations.  And then having all the information be as accessible as possible in as many open standards as possible.</p>
+<p>The next problem is even harder, which is to search individual points.  Both those within given datasets and just other information out there.  Google is now good at the later with their mapping search, but they aren&#8217;t any good at points within datasets.  It is a very hard problem, as individual points don&#8217;t have much metadata - just finding a point one has no idea what any of its attributes even mean.  One approach towards this, which we do support, is the route that INSPIRE has gone, of standardizing data attributes.  This way one can find known definitions of a &#8216;road&#8217; or a &#8216;waterway&#8217; and understand it even if it comes from different sources.  The other approach, which we also support, is to just get as much information - data, metadata, social metadata, applications, maps, uses - out there as possible, so that smarter people can try to tackle the problem.  Once there is enough valuable geospatial information out there then it will make economic sense for more people to invest in the problem.  So as OpenGeo we focus more on the &#8216;open&#8217;, and will help support any emerging standards to make data easier to search.  But we may at some point try to help encourage a central DNS type registry with automatic publishing of metadata from all GeoNodes to it, so data that is shared is searchable by default.</p>
+<p>The other thing that OpenGeo can do to help this is make it possible to do a search on any given GeoNode against all the data there.  So incorporating all the extra information it has available to give back results based on a location.  This should be particularly helpful for searches on a very small geographic area, as you can ask several GeoNodes that you know have the type of information you&#8217;re interested if they have _anything_, and then from there go from the data to the dataset information to figure out what it is and if it&#8217;s relevant.</p>
+<ul class="simple">
+<li>Better crawlability (REST services) of datasets and individual data points.</li>
+<li>Federated search across GeoNodes - one interface to search, across several nodes, with properly weighted results.</li>
+<li>Search across datasets for individual points.</li>
+<li>Better Catalog / CSW.  GeoNetwork needs some major contributions (possibly build it up around solr, since it&#8217;s already lucene based), or else we need something that can really scale and handle not only metadata but also help with the data.</li>
+<li>App Schema advances to better support known schemas, including on the fly schema transformation for users to put the data in to a form they know.</li>
+<li>Visual workbench tools for application schemas to do the data transforms without requiring complex configuration or code.</li>
+<li>GeoNode support for all types of data, metadata, social metadata and use, and incorporating that in to search results for datasets and eventually individual data as well.</li>
+<li>DNS type central registry of all geospatial information, with automatic notification to that registry built in by default to OpenGeo software (though could easily be disabled)</li>
+</ul>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="spatialize.html" title="previous chapter">Spatializing non-spatial data</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="other_tech.html" title="next chapter">Other Tech to be built</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="spatialize.html" title="previous chapter">Spatializing non-spatial data</a></li>
+            <li>Next: <a href="other_tech.html" title="next chapter">Other Tech to be built</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/search.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

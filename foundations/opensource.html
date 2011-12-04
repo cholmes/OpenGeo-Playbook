@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Open Source &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Foundations" href="index.html" />
+      <link rel="next" title="Open Standards" href="openstandards.html" />
+      <link rel="prev" title="Transparency" href="transparency.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="foundations/opensource">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Foundations</a> &raquo;</li>
+  <li>Open Source</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="openstandards.html" title="Open Standards"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="transparency.html" title="Transparency"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="open-source">
+<span id="opensource"></span><h1>Open Source<a class="headerlink" href="#open-source" title="Permalink to this headline">¶</a></h1>
+<p>OpenGeo&#8217;s primary mode of achieving its goals is to produce community-based Open Source software.  We believe that the work we produce should be available to all, especially when it costs us nothing to create additional copies.  Software is a <a class="reference external" href="http://en.wikipedia.org/wiki/Rivalry_%28economics%29non-rival">non-rival</a>, which means that providing an extra copy of GeoServer does not mean taking one away from someone else.  It can be copied infinitely, and so we feel that we shouldn&#8217;t artificially prevent that copying.  We believe our work should be used by the maximum number of people, so we make as much as possible available as Open Source.</p>
+<p>Of course the challenge is how to support developers to be able to afford to work on the software.  OpenGeo is an organizationally structure that tries to make that possible.  We currently make all the software that we work on as Open Source.  But we have talked about making some very small pieces only available as closed source.  Our strong preference is to not have to do that, and if we ever do we will definitely only keep it closed for a set amount of time.  The ideal is that all organizations who get value from our software contribute to funding core development, according to their ability.  But we are seeking to find a way to support 15 - 25 full time developers, and so are experimenting with alternate models.  Some of those may involve keeping some parts of the software closed, but we are more interested in models where all the &#8216;intellectual property&#8217; is available to all.</p>
+<p>Another core tenant of our open source philosophy is to base it in a community as much as possible.  This means we never want to be the only contributor to a project we work on.  Indeed our preference would be to always just be one player in a collection of interested organizations and individuals.  So we always prefer the projects we work on and support to be shepherded by organizations like Apache and OSGeo who are committed to the same ideals.  This is quite different from a majority of the companies that are built around open source business models - they tend to hire up all the core developers, and the community adds lots of value around the edges.  Since our first goal is the sustenance of the software it makes the most sense for us to set up a structure so that even if OpenGeo didn&#8217;t exist then the software could continue.  With a company their first concern of a company must be to make money, so to move faster they will hire up everyone who is good to further their aim.  Even at the potential expense of a thriving ecosystem which could lead to better software.</p>
+<p>Though we ourselves try to do as much open source as possible we are very pragmatic about it.  We don&#8217;t actively try to convince others to open source their work, but we strive to show that its process of collaboration builds better software.  We aren&#8217;t zealous in our application of it, indeed we put substantial work in to making our software work with an on proprietary platforms.  The stack we work on can easily be used in conjunction with proprietary systems, and we willingly put the work in to make it possible.  In the real world there are countless legacy systems, and it is rare to be able to do a complete migration all at once.  So we always try to collaborate with proprietary software, we just try to make our software open as much as possible.</p>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="transparency.html" title="previous chapter">Transparency</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="openstandards.html" title="next chapter">Open Standards</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="transparency.html" title="previous chapter">Transparency</a></li>
+            <li>Next: <a href="openstandards.html" title="next chapter">Open Standards</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/foundations/opensource.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Collaborative Data &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Technical Challenges" href="tech_challenges.html" />
+      <link rel="next" title="Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments" href="dil_mobile.html" />
+      <link rel="prev" title="Browse all imagery" href="imagery.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="tech/collaborative_data">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Tech</a> &raquo;</li>
+    <li><a href="tech_challenges.html" accesskey="U">Technical Challenges</a> &raquo;</li>
+  <li>Collaborative Data</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="dil_mobile.html" title="Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="imagery.html" title="Browse all imagery"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="collaborative-data">
+<span id="id1"></span><h1>Collaborative Data<a class="headerlink" href="#collaborative-data" title="Permalink to this headline">¶</a></h1>
+<p>Though OpenStreetMap has clearly led the way on collaborative data OpenGeo believes that there should be technical alternatives, that interact with OSM with their standards.  The core collaborative data infrastructure that we see is inspired more by open source software than wikipedia - a number of diverse projects with different focuses, different communities and norms, and different tools.  One of OpenGeo&#8217;s targets is existing government workflows, helping them be more collaborative and open internally, and working with their current tools.  So the core engine will be GeoServer and its transaction hooks.  The current protocols are WFS-T and WFS-V, but it should also implement OGC GeoSynchronization spec, OpenStreetMap&#8217;s API and ESRI&#8217;s Open GeoServices transactions.  The other standards piece that we want to see in the world is the geospatial equivalent of a &#8216;patch&#8217; that can be shared between systems.</p>
+<p>The engine should make it possible to stay in sync with OSM or another versioning data store, with a review engine for organizations to apply their own workflow to crowdsourced data.  That workflow may include automated checks (running a suite of geoprocessing analysis, for example to make sure that topology is maintained) and user quality assurance, as well as post processes like tile creation and cache truncation, as well as notification to interested users and machines.</p>
+<p>There needs to be intuitive web-based tools <a class="footnote-reference" href="#f8" id="id2">[1]</a>, as well as great mobile tools that work offline.  This will take significant interaction design work, to make the editing, versioning, merging and conflict resolution accessible to anyone, even if they have no training.  This user interface work is one of the biggest challenges, and will take constant iteration over many projects.  Existing desktop GIS&#8217;s should also all have plugins that work with the versioning backend.  And the versioning engine should be able to back on to ArcSDE Versioning, Oracle Workspace Manager, PostGIS and others.</p>
+<p>Another key is the social infrastructure around collaborative geospatial data, it needs to rival things like sourceforge and github in the open source software world.  There should be easy ways to join up with others, find a project to collaborate on, or to set up something for internal collaboration.  It needs to have all the tools to help collaboration, like issue trackers, notifications, wikis, and analysis tools.  And should also track reputation and be able to reward good contributions.</p>
+<p>The ultimate piece for this will be distributed version control.  It&#8217;s still an open research question if we should start with a DVCS like git and add spatial to it, or start with a spatial engine and add versioning.  Or some hybrid, like couchdb, which has a syncing model that can be used for versioning, and some decent spatial support.  But one shouldn&#8217;t need a central server.  This should ideally enable someone to &#8216;clone&#8217; someone else&#8217;s geospatial repository and apply their own QA, so you can have government workflows that easily collaborate with private individuals and companies, with geospatial edits easily flowing between all systems, keeping great track of provenance and reputation so as to build dynamic trust metrics to judge the reliability of a dataset.</p>
+<ul class="simple">
+<li>WFS-Versioning or some open protocol, perhaps REST based.  OGC&#8217;s GeoSynchronization is good to implement, but not sufficient for versioning, just review.</li>
+<li>Implement ESRI&#8217;s GeoServices REST API for editing (for compatibility with ArcGIS Desktop and Arc web front-ends), that backs on to the versioning engine.</li>
+<li>Push the current WFS-V logic back to PostGIS, so it does versioning automatically, not just through GeoServer.</li>
+<li>Implement Oracle Workspace Manager and ArcSDE Versioning as backends, likely improve the open protocol to be compatible with how they work.</li>
+<li>Active notification of changes, ideally a nice webhook implementation.</li>
+<li>Investigate spatializing distributed versioning options like git and couchdb.</li>
+<li>Put editing in GeoNode, add more social tools and tracking.  So all edits are tied to a user account, with ratings and commenting.  Put in features like cloning an existing dataset and setting up one&#8217;s own permissions, cascading changes, and starting a new dataset from scratch.</li>
+<li>Versioned editing in GeoNode, with deep tracking of changes across different branches of the same dataset.  And also plugins for issue tracking, wikis, notifications, etc.</li>
+<li>Versioning GUI components in GeoExplorer/GXP, so they can easily be combined and incorporated in other applications.</li>
+<li>Client and server side topology and network validation and advanced javascript editing - as good as or better than desktop tools in terms of editing interaction, including shared polygon boundaries, COGO, and build polygon tools.</li>
+<li>User interaction research and design for visual display and resolution of geometry and attribute difference between versions, with implementation in GeoExt/OpenLayers</li>
+<li>&#8216;Ethermap&#8217; - real-time collaboration on editing and viewing/styling maps, through javascript interfaces.</li>
+<li>Great tools, mobile and full web, to gather data, including government workflows, asset management, surveys, scientific data gathering, etc.  We should have a toolbox of custom workflows that can have anyone out in the field gathering data to feed in to collaborative workflows.</li>
+<li>Incorporation of versioning GUI in to a workflow pulling in changes from another location and performing appropriate QA to put it in to an &#8216;endorsed&#8217; dataset.</li>
+<li>Verification and digital signatures for &#8216;endorsed&#8217; datasets, edits and web services.</li>
+</ul>
+<p>(break up in to data editing/gathering and versioning?)</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f8" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>See <a class="reference external" href="http://projects.opengeo.org/geoext/wiki/GeoEditor">http://projects.opengeo.org/geoext/wiki/GeoEditor</a> for our current designs, but these will evolve as people use it more and demand more.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="imagery.html" title="previous chapter">Browse all imagery</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="dil_mobile.html" title="next chapter">Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="imagery.html" title="previous chapter">Browse all imagery</a></li>
+            <li>Next: <a href="dil_mobile.html" title="next chapter">Disconnected/Intermittent/Low-bandwidth (DIL) and mobile environments</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/tech/collaborative_data.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>

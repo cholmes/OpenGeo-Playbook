@@ -1,0 +1,144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>Collaborative Data &mdash; OpenGeo Playbook</title>
+  <link rel="stylesheet" href="../_static/blueprint/screen.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="../_static/blueprint/print.css" type="text/css" media="print" /> 
+  <!--[if IE]>
+  <link rel="stylesheet" href="../_static/blueprint/ie.css" type="text/css" media="screen, projection" />
+  <![endif]-->
+  <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html'
+    };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+  <script type="text/javascript" src="../_static/searchtools.js"></script>
+  <script type="text/javascript" src="../searchindex.js"></script>
+      <link rel="top" title="OpenGeo Playbook" href="../index.html" />
+      <link rel="up" title="Foundations" href="index.html" />
+      <link rel="next" title="Beyond Money" href="beyond_money.html" />
+      <link rel="prev" title="Open Data" href="opendata.html" />
+
+<!-- Feedback tab from GetSatisfaction (Part 1) -->
+<script type="text/javascript" charset="utf-8">
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- Feedback tab from GetSatisfaction (Part 2) -->
+<script type="text/javascript" charset="utf-8">
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "opengeo";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#291C17";
+  feedback_widget_options.style = "question";
+
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+</script>
+
+
+</head>
+<body class="foundations/collab_data">
+  <div id="header" class="selfclear">
+    <div class="wrap selfclear">
+      <div id="logo"><a href="../index.html">OpenGeo Playbook</a></div>
+
+<!--    <ul id="top-nav">
+        <li class="first"><a href="http://geoserver.org/display/GEOS/What+is+Geoserver">About</a></li>
+        <li><a href="http://blog.geoserver.org/">Blog</a></li>
+        <li><a href="http://geoserver.org/display/GEOS/Download">Download</a></li>
+        <li><a href="../index.html">Documentation</a></li>
+      </ul>
+-->
+        <form id="quick-search" action="../search.html" method="get">
+          <fieldset>
+            <input type="hidden" name="check_keywords" value="yes" />
+            <input type="hidden" name="area" value="default" />
+            <input id="quick-search-query" type="text" name="q" accessKey="q" name="searchQuery.queryString" size="25" value="Search Documentation &hellip;" size="20" tabindex="3" onblur="if(this.value=='') this.value='Search Documentation &hellip;';" onfocus="if(this.value=='Search Documentation &hellip;') this.value='';" />
+            <input id="quick-search-submit" type="image" value="Search" src="../_static/chrome/search_icon_blue.png" />
+          </fieldset>
+        </form>
+    </div><!-- /.wrap -->
+  </div><!-- /#header -->
+  <div id="main">
+    <div class="wrap selfclear">
+      <div id="content">
+<ul id="breadcrumbs">
+     
+  <li><a href="../index.html">Home</a> &raquo;</li>
+    <li><a href="index.html" accesskey="U">Foundations</a> &raquo;</li>
+  <li>Collaborative Data</li>
+</ul>
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="../genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="beyond_money.html" title="Beyond Money"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="opendata.html" title="Open Data"
+       accesskey="P">previous</a>|</li>
+</ul>
+        
+  <div class="section" id="collaborative-data">
+<span id="collab-data"></span><h1>Collaborative Data<a class="headerlink" href="#collaborative-data" title="Permalink to this headline">¶</a></h1>
+<p>Beyond just opening existing data we seek to help true collaboration around data.  In his book, The Success of Open Source Software, Stephen Weber points out that the essence of open source has potential far beyond just software.  Developers just happened to be the closest to the Internet, the key innovation which made Open Source possible.  At the core of open source is a blurring of lines between producers and consumers, making it possible for anyone to move from a mere user to a primary decision maker in the software.  In the open data movement we&#8217;ve primarily seen existing data sets being opened, with much less emphasis on building the proper collaborative environments.  As Open Source software got popular everyone quickly learned that it wasn&#8217;t a cure all, you couldn&#8217;t just open your software and have a community of people show up and carry it forward.  Open Data enthusiasts trumpet benefits in a way similar to the early days of open source software, but in the next phase of the movement we&#8217;re going to have to figure out how real collaboration around data can work.  For us that means aligning the incentives of those producing and consuming data, and building openness in to workflows. <a class="footnote-reference" href="#f3" id="id1">[1]</a></p>
+<p>OpenGeo seeks to further collaborative geospatial data, to push beyond just opening data, and encourage the creation and maintenance of data sets on a scale that hasn&#8217;t been possible before.  Geospatial information is definitely at the forefront of collaborative data, with OpenStreetMap and Ushahidi.  Our angle is to build modular tools that enable geospatial collaboration, and support a wide variety of projects that have different communities and technology needs.  We believe geospatial collaboration will end up more like open source than wikipedia.  Which is to say there will be a lot of different communities, with different norms, licenses, technologies and degrees of openness.  The type of collaboration around butterfly parks will be much different from that around emergency roads.  We believe that much of the innovation will be around governance - how you align the incentives of different groups so that they can collaborate.  And how data can flow between some groups with different norms - they may not work together directly but will always be able to overlay and pull data in.  Our focus is on modular tools that can help encourage this innovation, by making a base line set of great tools that can be tweaked and added to.  The proper architectures of participation around geospatial information are a blend of social and technical, and our goal is to advance the technical.  To do so we seek to work with many different collaborative data projects, from amateur and totally bottom up, to internal government ones, to commercial companies.</p>
+<p>Our goal is true collaboration, an ecosystem where citizens, government, and companies all collaborate on a public infrastructure of geospatial information, reducing replication in data collection as much as possible.  We focus on geospatial, but we hope that advances we assist in can be applied to all types of data, getting in to legal norms and generic technology.  But we feel it is essential to not just stop with &#8216;open&#8217;, but push in to collaboration and participation.  Open is not an end in itself, and we seek to help bring about the real advantages of open data that are possible once collaboration around it becomes real.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Nat Torkington has a really great post that articulates this type of thinking quite well, see <a class="reference external" href="http://radar.oreilly.com/2010/02/rethinking-open-data.html">http://radar.oreilly.com/2010/02/rethinking-open-data.html</a></td></tr>
+</tbody>
+</table>
+</div>
+
+
+      <div class="selfclear pagination-nav">
+          <div class="leftwise"><strong>Previous</strong>: <a href="opendata.html" title="previous chapter">Open Data</a></div>
+          <div class="rightwise"><strong>Next</strong>: <a href="beyond_money.html" title="next chapter">Beyond Money</a></div>
+      </div>
+      </div><!-- /#content> -->
+ <div id="sidebar">
+        <div class="section">
+          <h3>Continue Reading</h3>
+          <ul>
+            <li>Previous: <a href="opendata.html" title="previous chapter">Open Data</a></li>
+            <li>Next: <a href="beyond_money.html" title="next chapter">Beyond Money</a></li>
+          </ul>
+        </div>
+        <div class="section">
+        <h3>This Page</h3>
+        <ul class="this-page-menu">
+          <li><a href="../_sources/foundations/collab_data.txt">Show Source</a></li>
+        </ul>
+        </div>
+      
+  </div><!-- /#sidebar -->
+  </div><!-- /.wrap> -->
+</div><!-- /#main -->
+<div id="footer">
+  <div class="wrap">
+    &copy; Copyright 2010 <a href="http://opengeo.org/products/">OpenGeo</a>.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0; vertical-align:top" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a>
+  </div><!-- /.wrap> -->
+</div><!-- /#footer -->
+  </body>
+</html>
